@@ -1,4 +1,5 @@
 {
+  "homepage": "https://zafuss.github.io/",
   "name": "@arifszn/gitprofile",
   "description": "Create an automatic portfolio based on GitHub profile",
   "version": "3.1.0",
