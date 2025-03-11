@@ -214,6 +214,12 @@ interface Resume {
    */
   fileUrl?: string;
 }
+interface DateOfBirth {
+  /**
+   * Resume file url
+   */
+  dateOfBirth?: string;
+}
 
 interface Experience {
   company?: string;
@@ -408,6 +414,8 @@ interface Config {
    * Resume
    */
   resume?: Resume;
+  dateOfBirth?: DateOfBirth;
+  description?: Description;
 
   /**
    * Google Analytics config
