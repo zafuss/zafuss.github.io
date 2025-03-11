@@ -68,6 +68,12 @@ export interface SanitizedSocial {
 export interface SanitizedResume {
   fileUrl?: string;
 }
+export interface SanitizedDateOfBirth {
+  dateOfBirth?: string;
+}
+export interface SanitizedDescription {
+  description?: string;
+}
 
 export interface SanitizedExperience {
   company?: string;
@@ -141,6 +147,8 @@ export interface SanitizedConfig {
   seo: SanitizedSEO;
   social: SanitizedSocial;
   resume: SanitizedResume;
+  dateOfBirth: SanitizedDateOfBirth;
+  description: SanitizedDescription;
   skills: Array<string>;
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;

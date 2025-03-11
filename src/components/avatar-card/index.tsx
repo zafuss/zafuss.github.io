@@ -8,6 +8,8 @@ interface AvatarCardProps {
   loading: boolean;
   avatarRing: boolean;
   resumeFileUrl?: string;
+  dateOfBirth?: string;
+  description?: string;
 }
 
 /**
@@ -23,6 +25,8 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   loading,
   avatarRing,
   resumeFileUrl,
+  dateOfBirth,
+  description,
 }): JSX.Element => {
   return (
     <div className="card shadow-lg compact bg-base-100">
@@ -70,11 +74,29 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               </span>
             )}
           </h5>
-          <div className="mt-3 text-base-content text-opacity-60 font-mono">
-            {loading || !profile
-              ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
-              : profile.bio}
-          </div>
+        </div>
+        <div className="text-center mx-auto px-8">
+          <h5 className="font-bold">
+            {loading || !profile ? (
+              skeleton({ widthCls: 'w-48', heightCls: 'h-8' })
+            ) : (
+              <span className="text-sm font-normal opacity-70">
+                {dateOfBirth}
+              </span>
+            )}
+          </h5>
+        </div>
+        <br />
+        <div className="text-center mx-auto px-8">
+          <h5 className="font-bold">
+            {loading || !profile ? (
+              skeleton({ widthCls: 'w-48', heightCls: 'h-8' })
+            ) : (
+              <span className="text-sm font-normal opacity-70">
+                {description}
+              </span>
+            )}
+          </h5>
         </div>
         {resumeFileUrl &&
           (loading ? (

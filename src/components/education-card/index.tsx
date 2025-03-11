@@ -17,8 +17,8 @@ const ListItem = ({
       style={{ left: '-4.5px' }}
     ></div>
     <div className="my-0.5 text-xs">{time}</div>
-    <h3 className="font-semibold">{degree}</h3>
-    <div className="mb-4 font-normal">{institution}</div>
+    <h3 className="font-semibold">{institution}</h3>
+    <div className="mb-4 font-normal">{degree}</div>
   </li>
 );
 
