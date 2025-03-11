@@ -59,7 +59,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'zafuss',
+    linkedin: 'zafus',
     phone: '0823216213',
     email: 'zafus.coding@gmail.com',
   },
