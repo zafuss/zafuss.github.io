@@ -75,6 +75,7 @@ const CONFIG = {
 
   skills: [
     'Dart (Flutter)',
+    'Swift (iOS)',
     'Java (SpringBoot)',
     'ReactJS',
     'NodeJS',
@@ -82,22 +83,15 @@ const CONFIG = {
     'MySQL',
     'SQLServer',
   ],
-  // experiences: [
-  //   {
-  //     company: 'Company Name',
-  //     position: 'Position',
-  //     from: 'September 2021',
-  //     to: 'Present',
-  //     companyLink: 'https://example.com',
-  //   },
-  //   {
-  //     company: 'Company Name',
-  //     position: 'Position',
-  //     from: 'July 2019',
-  //     to: 'August 2021',
-  //     companyLink: 'https://example.com',
-  //   },
-  // ],
+  experiences: [
+    {
+      company: 'Charles Wembley',
+      position: 'Flutter Developer Intern',
+      from: 'April 2025',
+      to: 'Present',
+      companyLink: 'https://charleswembley.com',
+    },
+  ],
   certifications: [
     {
       name: 'TOEIC',
@@ -108,9 +102,9 @@ const CONFIG = {
   educations: [
     {
       institution: 'Ho Chi Minh City University of Technology (HUTECH)',
-      degree: 'Current GPA: 3.67/4.0',
+      degree: 'Current GPA: 3.69/4.0',
       from: '2021',
-      to: 'Present',
+      to: '2025',
     },
   ],
   // publications: [
